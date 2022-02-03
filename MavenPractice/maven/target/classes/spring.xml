@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+    
+     <bean id="car" class="com.msb.maven.Car"></bean>
+     <bean id="bike" class="com.msb.maven.Bike"></bean>
+     
+     
+     <bean id="Honda" class="com.msb.maven.Brand">
+     <constructor-arg index="0" value="Honda" type="java.lang.String"></constructor-arg>
+     <constructor-arg index="1" value="82000" type="java.lang.String"></constructor-arg>
+     </bean>
+     
+     <bean id="Honda_bike" class="com.msb.maven.Bike">
+     <property name="b" ref="Honda"></property>
+     </bean>
+     
+     
+     
+</beans>
+    
