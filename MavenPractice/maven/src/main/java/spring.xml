@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+    
+     <bean id="car" class="com.msb.maven.Car"></bean>
+     <bean id="bike" class="com.msb.maven.Bike"></bean>
+     
+    																 <!-- Constructor Injection -->
+     
+     <bean id="Honda" class="com.msb.maven.Brand">
+     <constructor-arg index="0" value="Honda Activa" type="java.lang.String"></constructor-arg>
+     <constructor-arg index="1" value="82000" type="java.lang.String"></constructor-arg>
+     </bean>
+     
+     
+     <bean id="Honda bike" class="com.msb.maven.Bike">
+     <property name="b" ref="Honda"></property>
+     </bean>
+     
+     																	<!-- Inner Bean -->
+     
+     <bean id="Tata Car" class="com.msb.maven.Car">
+     <property name="b">
+     <bean class="com.msb.maven.Brand">
+     <constructor-arg type="java.lang.String" index="0" value="Tata Harrier"></constructor-arg>
+     <constructor-arg type="java.lang.String" index="1" value="18 lakh"></constructor-arg>
+     </bean>
+     </property>
+     </bean>
+     
+     
+                                                                       		<!-- autowire by Name -->  <!-- autowire by type and constructor -->
+     <bean id="scooty" class="com.msb.maven.Bike" autowire="byName"></bean>
+     
+     <bean id="b" class="com.msb.maven.Brand">
+     <constructor-arg type="java.lang.String" index="0" value="Jupiter"></constructor-arg>
+     <constructor-arg type="java.lang.String" index="1" value="75000"></constructor-arg>
+     </bean>
+     
+     
+   
+   
+   <bean id="horn1" class="com.msb.maven.horn"></bean>
+   
+   <bean id="reno" class="com.msb.maven.Car"></bean>
+   <bean id="brand realme" class="com.msb.maven.Brand">
+   <constructor-arg index="0" value="gt"></constructor-arg>
+   <constructor-arg index="1" value="15000"></constructor-arg>
+   </bean>
+   
+
+     
+     
+        
+</beans>
+    
