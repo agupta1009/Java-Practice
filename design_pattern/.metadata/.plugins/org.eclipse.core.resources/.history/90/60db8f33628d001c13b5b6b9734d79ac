@@ -1,0 +1,10 @@
+package com.msb.design.adapter;
+
+public class assignment {
+	
+	void make_document()
+	{
+		new pilot().write();
+	}
+
+}

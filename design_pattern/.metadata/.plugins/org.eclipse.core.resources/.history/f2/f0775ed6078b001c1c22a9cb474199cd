@@ -1,0 +1,6 @@
+package com.msb.design.factory;
+
+public interface bill {
+	public bill calculate_bill(int units);
+
+}

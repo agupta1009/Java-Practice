@@ -1,0 +1,24 @@
+package com.msb.design.singleton;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class main {
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
+		login_dao user1=new login_dao();
+		user1.setUname("Ankush");
+		String url="jdbc:mysql://localhost:3306/user_details";
+		String uname="root";
+		String pass="root/mysql";
+		Statement st=singleton.get_connection(url, uname, pass).createStatement();
+		query=
+		
+		
+		
+
+	}
+
+}

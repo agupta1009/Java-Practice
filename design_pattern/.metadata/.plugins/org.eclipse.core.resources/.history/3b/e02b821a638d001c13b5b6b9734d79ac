@@ -1,0 +1,12 @@
+package com.msb.design.adapter;
+
+public class tv_remote implements remote {
+
+	@Override
+	public void setVolume() {
+		// TODO Auto-generated method stub
+		System.out.println("tv remote volume set");
+
+	}
+
+}

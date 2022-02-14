@@ -1,0 +1,20 @@
+package com.msb.design.builder;
+
+public class phone {
+int ram;
+int camera;
+String processor;
+String os;
+int battery;
+
+public phone(int ram, int camera, String processor, String os, int battery) {
+	super();
+	this.ram = ram;
+	this.camera = camera;
+	this.processor = processor;
+	this.os = os;
+	this.battery = battery;
+}
+
+
+}

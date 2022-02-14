@@ -1,0 +1,19 @@
+package com.msb.design.factory;
+
+public class factory_bill {
+	
+	public static bill get_instance(String name)
+	{
+		if(name==null)
+		{
+			return null;
+		}
+		else if(name.equals("commercial"))
+		{
+			return new commercial();
+		}
+		else
+			return new domestic();
+	}
+
+}

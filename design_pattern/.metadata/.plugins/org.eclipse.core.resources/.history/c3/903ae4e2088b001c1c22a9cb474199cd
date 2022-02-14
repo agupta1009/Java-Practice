@@ -1,0 +1,10 @@
+package com.msb.design.factory;
+
+public class generate_bill {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

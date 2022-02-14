@@ -1,0 +1,15 @@
+package com.msb.design.singleton;
+
+import java.sql.DriverManager;
+
+import com.sun.corba.se.pept.transport.Connection;
+
+public class singleton {
+
+	static Connection get_connection(String url,String uname,String pass) throws ClassNotFoundException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		Connection con=DriverManager.getConnection(url,uname,pass);
+		return con;
+		
+	}
+}

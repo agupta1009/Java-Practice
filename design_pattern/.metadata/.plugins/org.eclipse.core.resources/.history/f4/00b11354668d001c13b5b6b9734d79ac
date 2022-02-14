@@ -1,0 +1,18 @@
+package com.msb.design.adapter;
+
+public class remote_demo{
+	
+	private String type;
+	remote_demo(String type)
+	{
+		super();
+		this.type=type;
+	}
+	
+	void setVolume(remote_demo rm) {
+		new remote_adapter().setVolume(rm.type);
+		
+	}
+	
+
+}

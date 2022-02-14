@@ -1,0 +1,16 @@
+package com.msb.design.adapter;
+
+public class remote_adapter implements remote{
+
+	@Override
+	public void setVolume(String name) {
+		// TODO Auto-generated method stub
+		if(name=="dvd")
+		{
+			dvd d=new dvd();
+			d.setVolume_dvd();
+		}
+		
+	}
+
+}

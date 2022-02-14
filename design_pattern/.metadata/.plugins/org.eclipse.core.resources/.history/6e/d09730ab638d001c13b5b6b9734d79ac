@@ -1,0 +1,18 @@
+package com.msb.design.adapter;
+
+public class home_theator implements advanced_remote {
+
+	@Override
+	public void setVolume_dvd() {
+		// TODO Auto-generated method stub
+		System.out.println("volume set: dvd");
+
+	}
+
+	@Override
+	public void setVolume_hometheator() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

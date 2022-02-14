@@ -1,0 +1,21 @@
+package com.msb.design.observer;
+
+public class subscriber {
+
+	private String name;
+	void subscibe(String ch_name)
+	{
+		new channel(ch_name).add(this,ch_name);
+	}
+	public subscriber(String name) {
+		super();
+		this.name = name;
+	}
+	
+	void unsubscribe(String ch_name)
+	{
+		new channel(ch_name).remove(this,ch_name);
+	}
+	
+	
+}

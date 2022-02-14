@@ -1,0 +1,28 @@
+package com.msb.design.observer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class channel {
+	private String name;
+	
+	
+	public channel(String name) {
+		super();
+		this.name = name;
+	}
+
+	
+	void add(subscriber sb,String name)
+	{
+		subs.add(sb);
+		this.name=name;
+	}
+	
+	void remove(subscriber sb,String name) {
+		subs.remove(sb);
+	}
+	
+	
+
+}

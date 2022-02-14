@@ -1,0 +1,11 @@
+package com.msb.design.composite;
+
+public class leaf implements component {
+
+	@Override
+	public void show_price() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

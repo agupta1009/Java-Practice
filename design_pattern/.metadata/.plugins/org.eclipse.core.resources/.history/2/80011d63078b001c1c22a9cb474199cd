@@ -1,0 +1,5 @@
+package com.msb.design.factory;
+
+public abstract class bill {
+
+}

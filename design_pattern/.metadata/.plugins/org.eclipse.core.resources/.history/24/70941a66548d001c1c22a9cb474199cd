@@ -1,0 +1,26 @@
+package com.msb.design.prototype;
+
+public class details  implements get_clone{
+	String name;
+	String email;
+	String password;
+	
+	
+//	fetching the data from database by name
+	
+	
+	
+	
+	@Override
+	public  get_clone getClone() {
+		// TODO Auto-generated method stub
+		
+//		shallow copy
+		return this;
+		
+//		deep copy
+		
+		
+	}
+
+}

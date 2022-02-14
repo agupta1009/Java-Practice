@@ -1,0 +1,8 @@
+package com.msb.design.adapter;
+
+public class pilot {
+	void write()
+	{
+		System.out.println("write with a pilot pen");
+	}
+}
